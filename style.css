@@ -22,7 +22,17 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, var(--soft-pink) 0%, var(--caramel) 100%);
+    background-image:
+        linear-gradient(
+            rgba(250, 246, 240, 0.75),
+            rgba(250, 246, 240, 0.75)
+        ),
+        url("images/header-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     padding: 3rem 1.5rem;
     text-align: center;
     box-shadow: 0 4px 20px var(--shadow);
