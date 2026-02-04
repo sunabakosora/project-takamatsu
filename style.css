@@ -103,6 +103,16 @@ main {
     margin-bottom: 0.75rem;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
+}
+
 .card p {
     font-size: 0.9rem;
     color: var(--mocha);
