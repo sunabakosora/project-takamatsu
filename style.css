@@ -104,3 +104,38 @@ footer {
     font-size: 0.85rem;
     color: var(--caramel);
 }
+
+/* ページトップへ戻るボタン（script.js で DOM に追加） */
+.pagetop-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(196, 167, 125, 0.95);
+    color: var(--brown);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 12px rgba(92, 64, 51, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease, background 0.2s ease;
+    z-index: 1000;
+}
+
+.pagetop-btn:hover {
+    background: rgba(139, 115, 85, 0.95);
+    color: var(--cream);
+}
+
+.pagetop-btn.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
